@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ .second-header{
+    position: fixed;
+    padding: 25px;
+    background: black;
+    left: 0;
+    right: 0;
+} 
+
+.principal{
+display: flex;
+}
+
+.imagen-principal{
+    margin: 80px 40px 25px 40px; 
+    width: 25%;
+}
+
+
+.movie{
+    margin: 80px 40px 25px 40px;
+} 
+
+.coincidencia{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.porcentaje{
+    color: #71D074;
+    font-weight: 700;
+    padding-right: 25px;
+}
+
+.anio, .duracion{
+    color: gray;
+}
+
+.r-image{
+    padding-left: 5px;
+    padding-right: 20px;
+    width: 2%;
+}
+
+.hd{
+    padding-left: 5px;
+    width: 3%; 
+}
+
+.resumen{
+    margin-right: 80px;
+    padding: 40px;
+    text-align: justify;
+}
+
+.botones-peli{
+    /* padding: 40px; */
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+
