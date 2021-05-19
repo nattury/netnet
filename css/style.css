@@ -10,10 +10,13 @@ body{
 }
 
 .header{
+    width: 100%;
+    max-width: 1500px;
     background-image: linear-gradient(to bottom, black 0%, black 60%, rgba(0, 0, 0, 0.849) 95%,transparent 100%);
     padding: 15px;
     position: relative;
     z-index: 1;
+    box-sizing: border-box;
 }
 
 a{
@@ -32,6 +35,7 @@ a{
 }
 
 .banner{
+    width: 100%;
     margin-top: -70px;
     position: relative;
     /* Para sobreponer .infowick +absolute*/
@@ -42,7 +46,7 @@ a{
 
 .wick{
     width: 100%;
-    /* height: 70%; */
+    height: auto;
 }
 
 .info-wick{
@@ -139,9 +143,21 @@ justify-content: space-evenly;
 list-style: none;
 }
 
+@media screen and (max-width:800px) {
+    .imagen-principal{
+      width: 100%;
+}
 
+@media screen and (max-width:800px) {
+    .resumen{
+    width: 100%;
+}
 
+    }
+}
 
-
-
-
+@media screen and (max-width:400px) {
+    .contenedor{
+        width: 100%;
+    }
+}

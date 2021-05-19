@@ -4,6 +4,8 @@
 }
 
  .second-header{
+    width: 80%;
+    max-width: 1000px;
     position: fixed;
     padding: 25px;
     background: black;
@@ -12,12 +14,27 @@
 } 
 
 .principal{
-display: flex;
+    display: flex;
 }
 
 .imagen-principal{
     margin: 80px 40px 25px 40px; 
-    width: 25%;
+    width: 28%;
+    height: auto;
+}
+/*media query principal*/
+
+@media screen and (max-width:800px) {
+    .imagen-principal{
+        align-content:center;
+        position: absolute;
+        width: 100%;
+    }
+}
+@media screen and (max-width:800px) {
+    .resumen{
+      width: 100%;
+    }
 }
 
 
@@ -30,7 +47,22 @@ display: flex;
     display: flex;
     align-items: center;
 }
+@media screen and (max-width:800px) {
+    .coincidencia{
+        margin: 130px;
+        position: absolute;
+        text-align: center;
+    }
+}
+.botones:hover{
+    color:rgb(58, 56, 56);
+}
 
+.botones{
+    font-size: 18px;
+    width: 250px;
+    height: 23px;
+}
 .porcentaje{
     color: #71D074;
     font-weight: 700;
@@ -55,15 +87,57 @@ display: flex;
 .resumen{
     margin-right: 80px;
     padding: 40px;
-    text-align: justify;
+    position:relative;
+    text-align:justify;
+
 }
 
 .botones-peli{
     /* padding: 40px; */
-    width: 40%;
+    width: 300px;
+    height:50px ;
     display: flex;
     justify-content: space-evenly;
 }
+.galeria{
+    margin-top: 3em;
+    margin-bottom: 4em;
+    padding: 0 1em;
+}
+
+.galeria:first-child{
+    margin-top: 5em;
+}
+
+.contenedor{
+    margin-top: 1em;
+    display: flex;
+    /* white-space: nowrap; */
+    overflow-x: auto;
+}
+.peliculas{
+    display: inline-block;
+    /* margin-left: 10px;
+    No me está funcionando */
+}
+
+.peli-galeria{
+    /* width: 300px; */
+    margin-right: 10px;
+}
+
+.peli-galeria:last-child{
+margin: 0;
+}
+
+@media screen and (max-width:800px) {
+    .resumen{
+        display: none;
+    }
+}
+
+
+
 
 
 
