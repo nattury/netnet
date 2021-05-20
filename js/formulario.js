@@ -1,54 +1,34 @@
 const d = document, 
-    ls =localStorage;
-// console.log("recibido");
-//    function validar(){
-//        const $form = d.getElementById('formularioregistro');
-//        const $h2 = d.querySelector('.nombres');
-//         $form.addEventListener('submit', (e) =>{
-//         e.preventDefault();
-//         let $nombre = e.target.nombre.value,
-//         $contraseina = e.target.pass.value;
-//         console.log($contraseina,$nombre);
-//         ls.setItem("keynombre",$nombre);
-//         ls.setItem("keypassword",$contraseina);
-        
-//     })
-//     $h2.innerHTML= localname;
-            
-// }
-// let localname = ls.getItem("keynombre");
-// let localpass = ls.getItem("keypassword");
+        ls =localStorage;
 
-// d.addEventListener('DOMContentLoaded', e => {
-//     validar();
-//     console.log(localname, localpass);
-// });
+       
+function validar(){
+            const $form = d.getElementById('formularioregistro');
+            const $h2 = d.querySelector('.usuarios');
+             $form.addEventListener('submit', (e) =>{
+             e.preventDefault();
+             let $usuario = e.target.usuario.value,
+             $contraseina = e.target.pass.value;
+             console.log($contraseina,$usuario);
+             ls.setItem("keyusuario",$usuario);
+             ls.setItem("keypassword",$contraseina);
+             alert("Hola "+ $usuario +"\nGracias por suscribirte a Netnet 🎬🎬🎬 \nEn 2 segundos te redirigiremos a la página principal");
+             setTimeout ("redireccionar()", 3000);
+         })           
+     }
+     let localname = ls.getItem("keyusuario");
+     let localpass = ls.getItem("keypassword");
+     
+     d.addEventListener('DOMContentLoaded', e => {
+         validar();
+         console.log(localname, localpass);
+     });
 
-console.log("recibido");
-   function validar(){
-       const $form = d.getElementById('formularioregistro');
-       const $h2 = d.querySelector('.nombres');
-        $form.addEventListener('submit', (e) =>{
-        e.preventDefault();
-        let $nombre = e.target.nombre.value,
-        $contraseina = e.target.pass.value;
-        console.log($contraseina,$nombre);
-        ls.setItem("keynombre",$nombre);
-        ls.setItem("keypassword",$contraseina);
-        alert("Hola "+ $nombre);
-        
-    })
+     function redireccionar(){
+         window.location="index.html";    
+        }
+          
 
-    $h2.innerHTML= localname;
-            
-}
-let localname = ls.getItem("keynombre");
-let localpass = ls.getItem("keypassword");
-
-d.addEventListener('DOMContentLoaded', e => {
-    validar();
-    console.log(localname, localpass);
-});
 
 
 

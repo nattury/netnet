@@ -7,10 +7,6 @@ $('.mensaje a').click(function () {
 
 
 
-const formulario = document.getElementById('formularioregistro');
-const inputs = document.querySelectorAll('#formularioregistro input');
-//Accedemos a todos los inputs contenidos en el id formulario
-
 
 const expresiones = {
     //Objeto con varias propiedades
