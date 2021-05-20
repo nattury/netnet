@@ -18,7 +18,7 @@
 }
 
 .imagen-principal{
-    margin: 80px 40px 25px 40px; 
+    margin: 40px 40px 25px 40px; 
     width: 28%;
     height: auto;
 }
@@ -43,7 +43,7 @@
 } 
 
 .coincidencia{
-    margin-top: 10px;
+    margin-top: 15px;
     display: flex;
     align-items: center;
 }
@@ -59,10 +59,12 @@
 }
 
 .botones{
-    font-size: 18px;
+    font: size 24px;
     width: 250px;
     height: 23px;
+    font-weight: bold;
 }
+
 .porcentaje{
     color: #71D074;
     font-weight: 700;
